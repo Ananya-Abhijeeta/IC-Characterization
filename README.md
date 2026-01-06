@@ -23,6 +23,7 @@ Main Uses of Resistor
 - To Divide Voltage,
 - To Protect Components
 <img width="446" height="429" alt="image" src="https://github.com/user-attachments/assets/27cac24b-fa26-4abf-ade2-cf95eb2d9bf0" />
+
 2.Capacitors
 - A capacitor is a passive electrical component that stores energy in the form of an electric field, defined by the relation: Q = C * V, where C is the capacitance in Farads.
 - The capacitance C of a parallel-plate capacitor depends on its physical structure and the material between the plates, given by the formula: C = εA / d
