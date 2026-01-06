@@ -33,6 +33,10 @@ Main Uses of Resistor
 👉 Symbol: C.
 <img width="510" height="401" alt="image" src="https://github.com/user-attachments/assets/3893a322-1b51-4fb7-a5ce-c169544d620f" />
 
+3.RC Circuit
+An RC circuit is an electric circuit composed of resistors (R) and capacitors (C), which exhibit a time-dependent response to voltage or current changes. The fundamental time constant is defined as:
+τ = R * C, where τ (tau) represents the time constant in seconds, indicating how quickly the circuit charges or discharges.
+
 
 
 
