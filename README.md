@@ -38,12 +38,11 @@ Main Uses of Resistor
 τ = R * C, where τ (tau) represents the time constant in seconds, indicating how quickly the circuit charges or discharges.
 <img width="539" height="429" alt="image" src="https://github.com/user-attachments/assets/ec3d6e55-4a4f-449b-a3c5-86a8fc855fde" />
 
-# Transient Analysis
+## Transient Analysis
 
-## Netlist code
+### Netlist code
 ```
 * Title: CR Ckt Simulation using SKY130 model
-
 .lib "/home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
 
 .temp 25
