@@ -31,6 +31,8 @@ Main Uses of Resistor
 - The capacitance C of a parallel-plate capacitor depends on its physical structure and the material between the plates, given by the formula: C = εA / d
 - 👉 Unit: Farad (F)
 👉 Symbol: C.
+<img width="510" height="401" alt="image" src="https://github.com/user-attachments/assets/3893a322-1b51-4fb7-a5ce-c169544d620f" />
+
 
 
 
