@@ -37,7 +37,9 @@ Main Uses of Resistor
 - An RC circuit is an electric circuit composed of resistors (R) and capacitors (C), which exhibit a time-dependent response to voltage or current changes. The fundamental time constant is defined as:
 τ = R * C, where τ (tau) represents the time constant in seconds, indicating how quickly the circuit charges or discharges.
 <img width="539" height="429" alt="image" src="https://github.com/user-attachments/assets/ec3d6e55-4a4f-449b-a3c5-86a8fc855fde" />
+
 # Transient Analysis
+
 ## Netlist code
 * Title: CR Ckt Simulation using SKY130 model
 .lib "/home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
