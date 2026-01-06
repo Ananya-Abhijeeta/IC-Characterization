@@ -9,3 +9,10 @@ Characterization is carried out using tools like Ngspice, Spectre, HSPICE, Eldo 
 Contents
 
 1.Linear elements
+a)Resistors
+A resistor is a passive electronic component that limits or controls the flow of current in a circuit by providing resistance (opposition to current).
+
+👉 Unit: Ohm (Ω)
+👉 Symbol: R
+Ohm’s Law (Basic Rule)
+V=I×R
