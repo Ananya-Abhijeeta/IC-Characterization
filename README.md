@@ -41,7 +41,7 @@ Main Uses of Resistor
 # Transient Analysis
 
 ## Netlist code
-``
+```
 * Title: CR Ckt Simulation using SKY130 model
 
 .lib "/home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
@@ -69,7 +69,7 @@ plot v(in) v(out)
 .meas tran VMAX MAX V(out)
 
 .end
-``
+```
 <img width="1907" height="782" alt="image" src="https://github.com/user-attachments/assets/b5f392bf-dfd9-48fd-81f4-04db5a20dc85" />
 
 
