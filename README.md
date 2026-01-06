@@ -37,6 +37,34 @@ Main Uses of Resistor
 - An RC circuit is an electric circuit composed of resistors (R) and capacitors (C), which exhibit a time-dependent response to voltage or current changes. The fundamental time constant is defined as:
 τ = R * C, where τ (tau) represents the time constant in seconds, indicating how quickly the circuit charges or discharges.
 <img width="539" height="429" alt="image" src="https://github.com/user-attachments/assets/ec3d6e55-4a4f-449b-a3c5-86a8fc855fde" />
+# Transient Analysis
+* Title: CR Ckt Simulation using SKY130 model
+
+.lib "/home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
+.temp 25
+
+Vin     in      0       PULSE(0 1.8 0 0 0 100p 200p)
+XC1     in      out     sky130_fd_pr__cap_mim_m3_1 w=1 l=1
+XR1     out     0       0       sky130_fd_pr__res_high_po_0p35 l =3.5
+
+.tran 1p 300p
+
+.control
+run
+plot v(in) v(out)
+.endc
+
+*Measure Time delays
+.meas tran rise TRIG V(out) VAL=0.14 RISE=1 TARG V(out) VAL=1.29 RISE=1
+.meas tran fall TRIG V(out) VAL=1.29 FALL=1 TARG V(out) VAL=0.14 FALL=1
+.meas tran rise_delay TRIG V(in) VAL=0.7 RISE=1 TARG V(out) VAL=0.7 RISE=1
+.meas tran fall_delay TRIG V(in) VAL=0.7 FALL=1 TARG V(out) VAL=0.7 FALL=1
+
+*Measure Max Voltage
+.meas tran VMAX MAX V(out)
+
+.end
+<img width="1907" height="782" alt="image" src="https://github.com/user-attachments/assets/b5f392bf-dfd9-48fd-81f4-04db5a20dc85" />
 
 
 
