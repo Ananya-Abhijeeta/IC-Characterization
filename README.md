@@ -19,6 +19,6 @@ Ohm’s Law (Basic Rule)
 V=I×R
 Main Uses of Resistor
 
--To Limit Current
--To Divide Voltage,
--To Protect Components
+- To Limit Current
+- To Divide Voltage,
+- To Protect Components
