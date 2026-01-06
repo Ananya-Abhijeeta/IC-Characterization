@@ -18,6 +18,7 @@ A resistor is a passive electronic component that limits or controls the flow of
 Ohm’s Law (Basic Rule)
 V=I×R
 Main Uses of Resistor
+
 To Limit Current
 To Divide Voltage
 To Protect Components
