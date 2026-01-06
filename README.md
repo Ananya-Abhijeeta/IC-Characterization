@@ -23,7 +23,7 @@ Main Uses of Resistor
 - To Divide Voltage,
 - To Protect Components
 
-  <img width="446" height="429" alt="image" src="https://github.com/user-attachments/assets/59d33acf-60a2-4d66-81f8-a511c5f21df4" />Title: Resistor Simulation
+  <img width="446" height="429" alt="image" src="https://github.com/user-attachments/assets/59d33acf-60a2-4d66-81f8-a511c5f21df4" 
 
 
 
