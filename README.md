@@ -7,4 +7,5 @@ Characterization is carried out using tools like Ngspice, Spectre, HSPICE, Eldo 
 Characterization is carried out using tools like Ngspice, Spectre, HSPICE, Eldo (Simulation) and Xschem (Schematic) providing a complete framework for accurate simulation and analysis of analog circuits
 
 Contents
+
 1.Linear elements
