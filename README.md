@@ -41,7 +41,8 @@ Main Uses of Resistor
 # Transient Analysis
 
 ## Netlist code
-`` * Title: CR Ckt Simulation using SKY130 model
+``
+* Title: CR Ckt Simulation using SKY130 model
 
 .lib "/home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
 
