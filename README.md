@@ -42,7 +42,9 @@ Main Uses of Resistor
 
 ## Netlist code
 `` * Title: CR Ckt Simulation using SKY130 model
+
 .lib "/home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt"
+
 .temp 25
 
 Vin     in      0       PULSE(0 1.8 0 0 0 100p 200p)
