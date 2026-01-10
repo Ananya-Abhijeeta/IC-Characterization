@@ -94,6 +94,8 @@ plot vdb(out)
 
 .end
 ```
+<img width="1920" height="687" alt="image" src="https://github.com/user-attachments/assets/1645154a-0373-4a16-9535-24824f36460e" />
+
 
 
 
