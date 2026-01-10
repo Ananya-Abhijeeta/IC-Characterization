@@ -72,6 +72,28 @@ plot v(in) v(out)
 <img width="1907" height="782" alt="image" src="https://github.com/user-attachments/assets/b5f392bf-dfd9-48fd-81f4-04db5a20dc85" />
 
 
+## Ac analysis
+```
+* RC circuit AC analysis
+.lib "/home/sdash/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.temp 25
+
+V1      in      0       AC 1
+XR1     in      out     0       sky130_fd_pr__res_high_po_0p35  l=3.5
+XC1     out     0       sky130_fd_pr__cap_mim_m3_1 w=1 l=1
+
+* AC Simulation
+.ac dec 10 1 15g
+
+* Output commands
+.control
+run
+.meas ac f3db WHEN VDB(out) = -3 ; –3 dB cutoff frequency
+plot vdb(out)
+.endc
+
+.end
+```
 
 
 
