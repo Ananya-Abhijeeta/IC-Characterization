@@ -131,6 +131,46 @@ V<sub>GS</sub> > V<sub>TH</sub>
 V<sub>DS</sub> ≥ (V<sub>GS</sub> − V<sub>TH</sub>)
 
 Used for amplification
+## 3.Common Source Amplifier
+```
+************* common Source Amplifier with N-channel MOSFET and resistive load ************
+*************Date:28/10/2025,Designer:ananya,BBSR *****************************************
+
+
+
+.title CS Amplifier with NMOS driver and resistive load
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+
+.global gnd
+.temp 27
+
+xmn1 out in gnd gnd sky130_fd_pr__nfet_01v8 w=7 l=2 m=2
+Rd avdd out 8k
+cl out gnd 10p
+
+*vgs in gnd dc 0.9 ac -1
+vsup avdd gnd dc 1.8
+vin in gnd dc 0.9 ac 1 sin(0 1m 1000)
+*.op
+*.dc vgs 0 1.8 0.01
+.ac dec 20 1 1G
+*.tran 20u 1n
+
+.control
+run
+set color0=white
+print v(vout)
+plot v(in) v(out)
+plot db20(v(out)/v(in))
+plot ph(v(out)/v(in))
+.end
+.endc
+```
+<img width="1836" height="1004" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/81863df7-54e0-4627-a451-6d2037cc6263" />
+<img width="1839" height="1000" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/809bcf2c-3324-4299-8de1-37ef6215abd5" />
+
+
 
 
 
