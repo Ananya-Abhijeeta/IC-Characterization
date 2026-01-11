@@ -69,7 +69,8 @@ plot v(in) v(out)
 
 .end
 ```
-<img width="1907" height="782" alt="image" src="https://github.com/user-attachments/assets/b5f392bf-dfd9-48fd-81f4-04db5a20dc85" />
+<img width="1835" height="1014" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/91da9e3b-6918-4b6c-9562-fed32773ff16" />
+
 
 
 ## Ac analysis
