@@ -169,6 +169,44 @@ plot ph(v(out)/v(in))
 ```
 <img width="1836" height="1004" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/81863df7-54e0-4627-a451-6d2037cc6263" />
 <img width="1839" height="1000" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/809bcf2c-3324-4299-8de1-37ef6215abd5" />
+```
+*********************Common source amp with N-channel mosfet*************************
+*****************14/11/2025,ananya abhijeeta*********************
+********************silicon university************
+
+.title CS amplifier with NMoS Driver and PMOS current source load
+
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global gnd vdd
+.temp 27
+
+xmn1 out in gnd gnd sky130_fd_pr__nfet_01v8 w=7 l=2 m=2
+xmn2 Dn2 Gn2 gnd gnd sky130_fd_pr__nfet_01v8 w=7 l=2 m=2
+xmp1 Dp1 Dp2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w=7 l=2 m=6
+xmp2 Dp2 Dp2 vdd vdd sky130_fd_pr__pfet_01v8_lvt w=7 l=2 m=6
+vcm1 Dp1 out dc 0
+vcm2 Dp2 Dn2 dc 0
+Cl out gnd 10p
+
+vsup vdd gnd dc 1.8
+Vin in gnd dc 0.9 ac 1 sin(0.9 1m 100k)
+Vbn1 Gn2 gnd dc 0.9
+
+*.dc Vbn1 0 1.8 0.01
+.dc Vin 0 1.8 0.01
+
+.control
+run
+set color0=white
+plot v(out) v(Dp2)
+plot i(Vcm1) i(Vcm2)
+print abs(v(Dp2))
+.end
+.endc
+```
+<img width="1853" height="993" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/22d0c9c5-7265-44c9-9c54-eac4fa9e03ec" />
+
 
 
 
