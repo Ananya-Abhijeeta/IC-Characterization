@@ -97,6 +97,41 @@ plot vdb(out)
 ```
 <img width="1805" height="1011" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/0dba199c-1988-4f87-b0de-1afff9ec59c3" />
 
+## 2.MOSFET Circuits
+-MOSFET (Metal–Oxide–Semiconductor Field-Effect Transistor) is a voltage-controlled device used for:
+
+Switching (digital circuits)
+
+Amplification (analog circuits)
+
+👉 Current flows between Drain (D) and Source (S)
+👉 Controlled by Gate (G) voltage
+1️⃣ Cut-off Region (OFF)
+
+V<sub>GS</sub> < V<sub>TH</sub>
+
+No channel → No current
+
+Used as open switch
+
+2️⃣ Linear / Triode Region
+
+V<sub>GS</sub> > V<sub>TH</sub>
+
+Small V<sub>DS</sub>
+
+Acts like a resistor
+
+Used in analog switches
+
+3️⃣ Saturation Region
+
+V<sub>GS</sub> > V<sub>TH</sub>
+
+V<sub>DS</sub> ≥ (V<sub>GS</sub> − V<sub>TH</sub>)
+
+Used for amplification
+
 
 
 
