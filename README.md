@@ -208,6 +208,9 @@ print abs(v(Dp2))
 ```
 <img width="1853" height="993" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/22d0c9c5-7265-44c9-9c54-eac4fa9e03ec" />
 ## Common Drain Amplifier
+
+
+
 ```
 ********************* Common Drain Amplifier with MOSFET load ************
 ******************************* AC ANALYSIS ********************************
@@ -244,6 +247,8 @@ plot deriv(v(out))
 .end
 .endc
 ```
+
+
 <img width="1854" height="1014" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/28708bf6-4a99-4659-ad02-bdfd61eecf97" />
 <img width="1829" height="1007" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/aa5f1247-d482-422f-bb60-96cfb5477e15" />
 
