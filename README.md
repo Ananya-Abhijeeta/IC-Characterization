@@ -136,11 +136,8 @@ Used for amplification
 ************* common Source Amplifier with N-channel MOSFET and resistive load ************
 *************Date:28/10/2025,Designer:ananya,BBSR *****************************************
 
-
-
 .title CS Amplifier with NMOS driver and resistive load
 .lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
-
 
 .global gnd
 .temp 27
@@ -167,8 +164,12 @@ plot ph(v(out)/v(in))
 .end
 .endc
 ```
+
+
 <img width="1836" height="1004" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/81863df7-54e0-4627-a451-6d2037cc6263" />
 <img width="1839" height="1000" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/809bcf2c-3324-4299-8de1-37ef6215abd5" />
+
+
 ```
 *********************Common source amp with N-channel mosfet*************************
 *****************14/11/2025,ananya abhijeeta*********************
