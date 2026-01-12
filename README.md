@@ -205,8 +205,48 @@ print abs(v(Dp2))
 .end
 .endc
 ```
-
 <img width="1853" height="993" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/22d0c9c5-7265-44c9-9c54-eac4fa9e03ec" />
+## Common Drain Amplifier
+```
+********************* Common Drain Amplifier with MOSFET load ************
+******************************* AC ANALYSIS ********************************
+****************************** Date : 28/10/2025, ananya abhijeeta  *******************
+
+.title Common Drain Amplifier With MOSFET Load
+
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global gnd gnd
+.temp 27
+
+xm1 Dn1 in out gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+xm2 out Gn2 gnd gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+*Rl Out Gnd 10
+Vcm vdd Dn1 dc 0
+Cl out gnd 10p
+
+Vsup vdd gnd dc 1.8
+Vbias Gn2 gnd dc 0.85
+Vin in gnd dc 1.5 ac 1 sin(1.8 1m 100k)
+
+*.dc Vbn1 0 1.8 0.01
+.dc Vin 0 1.8 0.01
+.ac dec 10 1 1G
+
+.control
+run
+set color0=white
+plot v(out)
+plot i(Vcm)
+*plot ph((out)*180/pi)
+plot deriv(v(out))
+.end
+.endc
+```
+<img width="1854" height="1014" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/28708bf6-4a99-4659-ad02-bdfd61eecf97" />
+<img width="1829" height="1007" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/aa5f1247-d482-422f-bb60-96cfb5477e15" />
+
+
 
 
 
