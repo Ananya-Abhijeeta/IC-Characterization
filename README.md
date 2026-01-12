@@ -529,6 +529,8 @@ plot v(out)
 
 
 <img width="1920" height="1007" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/e5bc9a8c-4a6a-4d1d-ac3a-2a95d7f584d9" />
+<img width="1834" height="986" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/375d2e7a-502a-4d37-8572-881e4ca3a40b" />
+
 
 
 
