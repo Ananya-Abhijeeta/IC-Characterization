@@ -485,6 +485,8 @@ plot v(Sn1) v(out)
 .endc
 ```
 <img width="1833" height="1024" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/f6cb931c-c829-4beb-9304-22f3b2550373" />
+
+
 ```
 ********************* Common Gate Amplifier with MOSFET and resistive load ************
 ******************************* DC ANALYSIS ********************************
@@ -523,6 +525,9 @@ plot v(out)
 .end
 .endc
 ```
+
+
+
 <img width="1920" height="1007" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/e5bc9a8c-4a6a-4d1d-ac3a-2a95d7f584d9" />
 
 
