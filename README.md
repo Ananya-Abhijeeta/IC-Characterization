@@ -404,6 +404,8 @@ plot v(Sn1) v(out)
 .endc
 ```
 <img width="1821" height="990" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/756d9e51-4acf-49f6-8d01-bcf43ed76cc9" />
+<img width="1833" height="997" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/a20bb79c-e649-4834-8f1a-f5ee43d53e32" />
+
 
 
 
