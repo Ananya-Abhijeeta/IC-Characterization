@@ -207,6 +207,8 @@ print abs(v(Dp2))
 .endc
 ```
 <img width="1853" height="993" alt="Screenshot (8)" src="https://github.com/user-attachments/assets/22d0c9c5-7265-44c9-9c54-eac4fa9e03ec" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8d91ef7a-ee39-4c5b-9c4e-7353cebfe31c" />
+
 ## Common Drain Amplifier
 
 
