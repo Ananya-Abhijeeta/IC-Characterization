@@ -290,7 +290,7 @@ plot deriv(v(out))
 .endc
 ```
 
-
+<img width="1820" height="1000" alt="Screenshot (16)" src="https://github.com/user-attachments/assets/25fd015b-f5fa-4cfa-ad9a-f3c9b41131eb" />
 <img width="1854" height="1014" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/28708bf6-4a99-4659-ad02-bdfd61eecf97" />
 <img width="1829" height="1007" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/aa5f1247-d482-422f-bb60-96cfb5477e15" />
 
