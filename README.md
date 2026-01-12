@@ -170,6 +170,44 @@ plot ph(v(out)/v(in))
 <img width="1839" height="1000" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/809bcf2c-3324-4299-8de1-37ef6215abd5" />
 
 
+
+```
+**********common source amplifiier with resistive load and source***************
+*****************dc analysis************************
+************Ananya abhijeeta,14/11/2025*************************
+.title Source degenerated CS Amplifier with NMOS driver and resistive load
+
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global gnd vdd
+.temp 27
+
+xmn1 out in Sn1 gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+Rd vdd net1 8k
+Rs Sn1 gnd 0.8k
+Vcm net1 out dc 0
+Cl out gnd 10p
+
+
+vsup vdd gnd dc 1.8
+vin in gnd dc 0.85 ac 1 sin(0.9 1m 100k)
+
+*.dc vbn1 0 1.8 0.01
+.dc vin 0 1.8 0.01
+
+.control
+run
+set color0=white
+plot v(out) v(sn1)
+plot i(Vcm)
+plot deriv(v(out))
+.end
+.endc
+```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e9f13ca5-0ae4-4536-b1a9-1a4f508b9557" />
+
+
+
 ```
 *********************Common source amp with N-channel mosfet*************************
 *****************14/11/2025,ananya abhijeeta*********************
