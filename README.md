@@ -252,6 +252,42 @@ print abs(v(Dp2))
 ## Common Drain Amplifier
 
 
+```
+********************** Common Drain Amplifier with resistive load ************
+******************************* AC ANALYSIS ********************************
+****************************** Date : 28/10/2025,  Designer:  Chandan Shaw *******************
+
+.title Common Drain Amplifier With Resistive Load
+
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global gnd gnd
+.temp 27
+
+xm1 Dn1 in out gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+Rs out gnd 5k
+*Rl Out Gnd 9
+Vcm vdd Dn1 dc 0
+Cl out gnd 10p
+
+vsup vdd gnd dc 1.8
+Vin in gnd dc 1.5 ac 1 sin(1.438 1m 100k)
+
+*.dc Vbn1 0 1.8 0.01
+.ac dec 10 1 10G
+
+.control
+run
+set color0=white
+plot v(out)
+plot ph(out)*(180/pi)
+.end
+.endc
+```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/939acf32-1913-4230-b71a-953ffada707c" />
+
+
+
 
 ```
 ********************* Common Drain Amplifier with MOSFET load ************
