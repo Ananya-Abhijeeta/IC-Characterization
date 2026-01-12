@@ -205,6 +205,8 @@ plot deriv(v(out))
 .endc
 ```
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e9f13ca5-0ae4-4536-b1a9-1a4f508b9557" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/96a89023-4016-43b4-85b5-0e45399d85b5" />
+
 
 
 
