@@ -294,6 +294,46 @@ plot deriv(v(out))
 <img width="1854" height="1014" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/28708bf6-4a99-4659-ad02-bdfd61eecf97" />
 <img width="1829" height="1007" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/aa5f1247-d482-422f-bb60-96cfb5477e15" />
 
+```
+**********common source amplifiier with resistive load and source***************
+*****************dc analysis************************
+************Ananya abhijeeta,14/11/2025*************************
+.title Source degenerated CS Amplifier with NMOS driver and resistive load
+
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global gnd vdd
+.temp 27
+
+xmn1 out in Sn1 gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+Rd vdd net1 8k
+Rs Sn1 gnd 0.8k
+Vcm net1 out dc 0
+Cl out gnd 10p
+
+
+vsup vdd gnd dc 1.8
+vin in gnd dc 0.85 ac 1 sin(0.9 1m 100k)
+
+*.dc vbn1 0 1.8 0.01
+.dc vin 0 1.8 0.01 Rs 0 0.8k 0.2k
+
+.control
+run
+set color0=white
+plot v(out) v(sn1)
+plot i(Vcm)
+plot deriv(v(out))
+.end
+.endc
+```
+<img width="1853" height="990" alt="Screenshot (19)" src="https://github.com/user-attachments/assets/64c94a26-6b83-4923-8175-51e0db995d9d" />
+<img width="1826" height="1011" alt="Screenshot (18)" src="https://github.com/user-attachments/assets/2923191f-1018-44fd-bc16-82c980a98867" />
+<img width="1807" height="1031" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/1c662d65-5437-4a1b-a179-7c62ac68e42f" />
+
+
+
+
 
 
 
