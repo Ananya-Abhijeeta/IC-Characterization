@@ -330,6 +330,51 @@ plot deriv(v(out))
 <img width="1854" height="1014" alt="Screenshot (10)" src="https://github.com/user-attachments/assets/28708bf6-4a99-4659-ad02-bdfd61eecf97" />
 <img width="1829" height="1007" alt="Screenshot (11)" src="https://github.com/user-attachments/assets/aa5f1247-d482-422f-bb60-96cfb5477e15" />
 
+
+```
+********************** Common Drain Amplifier with MOSFET load ************
+******************************* DC ANALYSIS ********************************
+****************************** Date : 28/10/2025,  Designer:  Ananya Abhijjeeta *******************
+
+.title Common Drain Amplifier With MOSFET Load
+
+.lib /home/ubuntu/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.global gnd vdd
+.temp 27
+
+xm1 Dn1 in out gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+xm2 out Gn2 gnd gnd sky130_fd_pr__nfet_01v8 w=5 l=2 m=4
+*Rl Out Gnd 10
+Vcm vdd Dn1 dc 0
+Cl out gnd 10p
+
+Vsup vdd gnd dc 1.8
+Vbias Gn2 gnd dc 0.85
+Vin in gnd dc 1.14 ac 1 sin(1.8 1m 100k)
+
+*.dc Vbn1 0 1.8 0.01
+*.dc Vin 0 1.8 0.01
+.ac dec 10 1 1G
+
+.control
+run
+set color0=white
+plot v(out)
+plot i(Vcm)
+plot db(out)
+plot ph(out)*180/pi
+*plot deriv(v(out))
+.end
+.endc
+```
+<img width="1839" height="993" alt="Screenshot (30)" src="https://github.com/user-attachments/assets/99f2642a-068d-4fcc-b9c2-7780f53f6bbf" />
+<img width="1814" height="997" alt="Screenshot (31)" src="https://github.com/user-attachments/assets/0078fbbc-5383-4126-9619-cc4fbb544fd9" />
+<img width="1840" height="1000" alt="Screenshot (29)" src="https://github.com/user-attachments/assets/3f8fbd79-71ca-4f8d-a32f-2a1eedb729ea" />
+
+
+
+
 ```
 **********common source amplifiier with resistive load and source***************
 *****************dc analysis************************
