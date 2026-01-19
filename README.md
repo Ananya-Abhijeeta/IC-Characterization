@@ -131,6 +131,9 @@ V<sub>GS</sub> > V<sub>TH</sub>
 V<sub>DS</sub> ≥ (V<sub>GS</sub> − V<sub>TH</sub>)
 
 Used for amplification
+
+## Amplifiers
+
 ## 3.Common Source Amplifier
 ```
 ************* common Source Amplifier with N-channel MOSFET and resistive load ************
